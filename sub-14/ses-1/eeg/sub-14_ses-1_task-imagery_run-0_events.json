@@ -1,0 +1,34 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"avanzar": "(Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine, Speak, (Word, (Label/avanzar))))",
+			"retroceder": "(Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine, Speak, (Word, (Label/retroceder))))",
+			"derecha": "(Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine, Speak, (Word, (Label/derecha))))",
+			"izquierda": "(Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine, Speak, (Word, (Label/izquierda))))"
+		}
+	},
+	"Description": "Event annotations for imagery task (avanzar, derecha, izquierda, retroceder).",
+	"StimulusPresentation": {
+		"StimulusType": "visual + auditory cue",
+		"StimulusModalities": [
+			"visual",
+			"auditory"
+		],
+		"PrimaryModality": "visual"
+	}
+}

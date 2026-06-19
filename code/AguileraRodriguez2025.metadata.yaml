@@ -1,0 +1,145 @@
+_dataset:
+  class: AguileraRodriguez2025
+  code: AguileraRodriguez2025
+  doi: 10.1038/s41597-025-05926-5
+  interval:
+  - 0
+  - 2
+  n_subjects: 15
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 24
+  ground: Fpz
+  hardware: mBrainTrain Smarting
+  line_freq: 60.0
+  montage: standard_1005
+  n_channels: 24
+  reference: FCz
+  sampling_rate: 500.0
+  sensor_type: EEG
+  sensors:
+  - Fp1
+  - Fp2
+  - F3
+  - F4
+  - C3
+  - C4
+  - P3
+  - P4
+  - O1
+  - O2
+  - F7
+  - F8
+  - T7
+  - T8
+  - P7
+  - P8
+  - Fz
+  - Cz
+  - Pz
+  - AFz
+  - CPz
+  - POz
+  - M1
+  - M2
+data_structure:
+  n_trials: 1800
+  n_trials_per_class:
+    avanzar: 450
+    derecha: 450
+    izquierda: 450
+    retroceder: 450
+  trials_context: 15 subjects x 120 trials (30 per class).
+documentation:
+  associated_paper_doi: 10.1038/s41597-025-05926-5
+  description: EEG-based imagined speech database comparing traditional cue-based and gamified paradigms.
+  doi: 10.1038/s41597-025-05926-5
+  institution: Tecnologico de Monterrey
+  investigators:
+  - Edgar Aguilera-Rodriguez
+  - Alma Cuevas-Romero
+  - Santiago Mendoza-Franco
+  - Jonathan Wornovitzky-Green
+  - Eduardo Rivera-Cerros
+  - David Villanueva-Cazares
+  - Luis Alberto Munoz-Ubando
+  - David Ibarra-Zarate
+  - Luz Maria Alonso-Valerdi
+  keywords:
+  - imagined speech
+  - EEG
+  - gamified paradigm
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2025
+  repository: Mendeley Data
+experiment:
+  class_labels:
+  - avanzar
+  - retroceder
+  - derecha
+  - izquierda
+  events:
+    avanzar: 1
+    derecha: 3
+    izquierda: 4
+    retroceder: 2
+  hed_tags:
+    avanzar: (Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/avanzar))))
+    derecha: (Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/derecha))))
+    izquierda: (Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/izquierda))))
+    retroceder: (Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation), (Agent-action, (Imagine,
+      Speak, (Word, (Label/retroceder))))
+  mode: offline
+  n_classes: 4
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  - auditory
+  stimulus_type: visual + auditory cue
+  study_design: 'Comparison of traditional cue-based vs gamified (Pac-man) paradigms for imagined speech BCI. Traditional
+    paradigm: visual+auditory cue with 5 beeps at T=1.4s rhythm, subject imagines speech for 7 repetitions, last 3 extracted
+    for analysis. 2s rest between trials. Gamified paradigm: The experiment started with a maze appearing on the screen, composed
+    of white borders, progress dots, and checkpoints represented by cookies. The trial was divided into four steps: (1) movement
+    decision, (2) imagined speech, (3) vocalized speech, and (4) character movement. The first three steps were performed
+    each in period T=1.4s. The trial starts with white borders, the character standing still, and an auxiliary arrow pointing
+    in the next correct direction. Based on the way the character was faced, the user must decide which word is adequate to
+    achieve the goal (movement decision). Then, the maze borders turn green, indicating the participant must imagine pronouncing
+    the previously decided word (imagined speech).'
+  synchronicity: synchronous
+  trial_duration: 11.8
+file_format: EDF
+paradigm_specific:
+  cue_duration_s: 1.4
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 9.8
+  imagery_tasks:
+  - avanzar
+  - retroceder
+  - derecha
+  - izquierda
+participants:
+  age_max: 27
+  age_min: 18
+  bci_experience: naive
+  gender:
+    female: 7
+    male: 8
+  health_status: healthy
+  n_subjects: 15
+  species: human
+preprocessing:
+  data_state: raw
+runs_per_session: 1
+sessions_per_subject: 2
+tags:
+  modality:
+  - Speech
+  pathology:
+  - Healthy
+  type:
+  - Research

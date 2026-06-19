@@ -1,0 +1,41 @@
+{
+    "Name": "AguileraRodriguez2025",
+    "BIDSVersion": "1.9.0",
+    "HEDVersion": "8.4.0",
+    "DatasetType": "derivative",
+    "License": "CC-BY-NC-ND-4.0",
+    "Authors": [
+        "Edgar Aguilera-Rodriguez",
+        "Alma Cuevas-Romero",
+        "Santiago Mendoza-Franco",
+        "Jonathan Wornovitzky-Green",
+        "Eduardo Rivera-Cerros",
+        "David Villanueva-Cazares",
+        "Luis Alberto Munoz-Ubando",
+        "David Ibarra-Zarate",
+        "Luz Maria Alonso-Valerdi"
+    ],
+    "ReferencesAndLinks": [
+        "10.1038/s41597-025-05926-5"
+    ],
+    "Keywords": [
+        "imagined speech",
+        "EEG",
+        "gamified paradigm"
+    ],
+    "DatasetDOI": "doi:10.1038/s41597-025-05926-5",
+    "GeneratedBy": [
+        {
+            "CodeURL": "https://github.com/NeuroTechX/moabb",
+            "Name": "moabb",
+            "Description": "Mother of All BCI Benchmarks",
+            "Version": "1.5.0dev0"
+        }
+    ],
+    "SourceDatasets": [
+        {
+            "DOI": "10.1038/s41597-025-05926-5"
+        }
+    ],
+    "PublicationYear": 2025
+}

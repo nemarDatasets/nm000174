@@ -1,0 +1,132 @@
+AguileraRodriguez2025
+=====================
+
+Imagined Speech EEG dataset comparing paradigm designs.
+
+Dataset Overview
+----------------
+  Code: AguileraRodriguez2025
+  Paradigm: imagery
+  DOI: 10.1038/s41597-025-05926-5
+  Subjects: 15
+  Sessions per subject: 2
+  Events: avanzar=1, retroceder=2, derecha=3, izquierda=4
+  Trial interval: [0, 2] s
+  File format: EDF
+
+Acquisition
+-----------
+  Sampling rate: 500.0 Hz
+  Number of channels: 24
+  Channel types: eeg=24
+  Channel names: Fp1, Fp2, F3, F4, C3, C4, P3, P4, O1, O2, F7, F8, T7, T8, P7, P8, Fz, Cz, Pz, AFz, CPz, POz, M1, M2
+  Montage: standard_1005
+  Hardware: mBrainTrain Smarting
+  Reference: FCz
+  Ground: Fpz
+  Sensor type: EEG
+  Line frequency: 60.0 Hz
+
+Participants
+------------
+  Number of subjects: 15
+  Health status: healthy
+  Age: min=18, max=27
+  Gender distribution: male=8, female=7
+  BCI experience: naive
+  Species: human
+
+Experimental Protocol
+---------------------
+  Paradigm: imagery
+  Number of classes: 4
+  Class labels: avanzar, retroceder, derecha, izquierda
+  Trial duration: 11.8 s
+  Study design: Comparison of traditional cue-based vs gamified (Pac-man) paradigms for imagined speech BCI. Traditional paradigm: visual+auditory cue with 5 beeps at T=1.4s rhythm, subject imagines speech for 7 repetitions, last 3 extracted for analysis. 2s rest between trials. Gamified paradigm: The experiment started with a maze appearing on the screen, composed of white borders, progress dots, and checkpoints represented by cookies. The trial was divided into four steps: (1) movement decision, (2) imagined speech, (3) vocalized speech, and (4) character movement. The first three steps were performed each in period T=1.4s. The trial starts with white borders, the character standing still, and an auxiliary arrow pointing in the next correct direction. Based on the way the character was faced, the user must decide which word is adequate to achieve the goal (movement decision). Then, the maze borders turn green, indicating the participant must imagine pronouncing the previously decided word (imagined speech).
+  Stimulus type: visual + auditory cue
+  Stimulus modalities: visual, auditory
+  Primary modality: visual
+  Synchronicity: synchronous
+  Mode: offline
+
+HED Event Annotations
+---------------------
+  Schema: HED 8.4.0 | Browse: https://www.hedtags.org/hed-schema-browser
+
+  avanzar
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Speak
+          └─ Word
+             └─ Label/avanzar
+
+  retroceder
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Speak
+          └─ Word
+             └─ Label/retroceder
+
+  derecha
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Speak
+          └─ Word
+             └─ Label/derecha
+
+  izquierda
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation, Auditory-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Speak
+          └─ Word
+             └─ Label/izquierda
+
+Paradigm-Specific Parameters
+----------------------------
+  Detected paradigm: motor_imagery
+  Imagery tasks: avanzar, retroceder, derecha, izquierda
+  Cue duration: 1.4 s
+  Imagery duration: 9.8 s
+
+Data Structure
+--------------
+  Trials: 1800
+  Trials per class: avanzar=450, retroceder=450, derecha=450, izquierda=450
+  Trials context: 15 subjects x 120 trials (30 per class).
+
+Preprocessing
+-------------
+  Data state: raw
+  Preprocessing applied: False
+
+Tags
+----
+  Pathology: Healthy
+  Modality: Speech
+  Type: Research
+
+Documentation
+-------------
+  Description: EEG-based imagined speech database comparing traditional cue-based and gamified paradigms.
+  DOI: 10.1038/s41597-025-05926-5
+  Associated paper DOI: 10.1038/s41597-025-05926-5
+  License: CC-BY-NC-ND-4.0
+  Investigators: Edgar Aguilera-Rodriguez, Alma Cuevas-Romero, Santiago Mendoza-Franco, Jonathan Wornovitzky-Green, Eduardo Rivera-Cerros, David Villanueva-Cazares, Luis Alberto Munoz-Ubando, David Ibarra-Zarate, Luz Maria Alonso-Valerdi
+  Institution: Tecnologico de Monterrey
+  Repository: Mendeley Data
+  Publication year: 2025
+  Keywords: imagined speech, EEG, gamified paradigm
+
+References
+----------
+Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Hochenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
+
+Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103. https://doi.org/10.1038/s41597-019-0104-8
+
+---
+Generated by MOABB 1.5.0dev0 (Mother of All BCI Benchmarks)
+https://github.com/NeuroTechX/moabb
