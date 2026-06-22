@@ -23,7 +23,7 @@
     "EEG",
     "gamified paradigm"
   ],
-  "DatasetDOI": "doi:10.1038/s41597-025-05926-5",
+  "DatasetDOI": "10.82901/nemar.nm000174",
   "GeneratedBy": [
     {
       "CodeURL": "https://github.com/NeuroTechX/moabb",
@@ -35,6 +35,9 @@
   "SourceDatasets": [
     {
       "DOI": "10.1038/s41597-025-05926-5"
+    },
+    {
+      "DOI": "doi:10.1038/s41597-025-05926-5"
     }
   ],
   "PublicationYear": 2025,
