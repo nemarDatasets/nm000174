@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined Speech EEG dataset comparing paradigm designs (Aguilera-Rodriguez et al. 2025)",
-  "description": "This dataset comprises EEG recordings from 15 healthy participants performing imagined speech tasks across four directional commands (avanzar, retroceder, derecha, izquierda). The study compares two experimental paradigm designs: a traditional cue-based approach with visual and auditory cues, and a gamified Pac-Man maze-based paradigm. Data were acquired at 500 Hz using 24 EEG channels and include 1,800 trials (120 per subject across 2 sessions) with balanced class distribution, providing a resource for developing and benchmarking brain-computer interface systems based on imagined speech.",
-  "methods_description": "EEG data were recorded from 15 healthy participants (8 male, 7 female, ages 18-27) using a mBrainTrain Smarting system with 24 channels sampled at 500 Hz. Two experimental paradigms were employed: (1) Traditional cue-based paradigm with visual and auditory cues (5 beeps at 1.4s rhythm), followed by 7 repetitions of imagined speech with the last 3 extracted for analysis and 2s inter-trial rest; (2) Gamified paradigm using a Pac-Man maze interface with four sequential steps (movement decision, imagined speech, vocalized speech, character movement), each lasting 1.4s. Participants performed 120 trials per session across 2 sessions, with equal distribution across four imagined speech classes. Data were recorded with FCz reference and Fpz ground, with 60 Hz line frequency notch.",
+  "description": "An EEG dataset of imagined speech from 15 healthy participants comparing traditional cue-based and gamified (Pac-Man maze) paradigms for brain-computer interface applications. The dataset comprises 1,800 trials across four Spanish directional commands recorded at 500 Hz from 24 electrodes using the mBrainTrain Smarting system. This derivative dataset enables systematic evaluation of paradigm design effects on imagined speech decoding performance.",
+  "methods_description": "EEG data were acquired from 15 healthy participants (8 male, 7 female, ages 18-27) using a 24-channel mBrainTrain Smarting system at 500 Hz sampling rate with FCz reference and Fpz ground. Two experimental paradigms were compared: (1) traditional cue-based with visual and auditory cues (5 beeps at 1.4s rhythm) followed by 7 imagined speech repetitions, with the last 3 repetitions extracted for analysis, and (2) gamified paradigm using a Pac-Man maze interface with 1.4s periods for movement decision, imagined speech, and vocalized speech. Each participant completed 2 sessions with 120 trials per session (30 per class), yielding 450 trials per class across the dataset. The final dataset contains the last 3 imagined speech repetitions per trial from the traditional paradigm.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -29,13 +29,24 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "speech imagery"
     },
     {
       "term": "gamified paradigm"
     },
     {
-      "term": "motor imagery"
+      "term": "neural decoding"
+    },
+    {
+      "term": "Pac-Man"
+    },
+    {
+      "term": "Spanish commands"
     }
   ],
   "related_identifiers": [
@@ -83,5 +94,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "a8775a929c954e9a50e25b5a138e1918a614f6bacdbf853ad06f3d3331bd3304"
+  "source_hash": "d7cdc62ab2f9a8591fa302bbe6d135fd9003caf570e92d86d556bbb508d60b51"
 }
