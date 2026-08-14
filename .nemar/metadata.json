@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined Speech EEG dataset comparing paradigm designs (Aguilera-Rodriguez et al. 2025)",
-  "description": "An EEG dataset of imagined speech from 15 healthy participants comparing traditional cue-based and gamified (Pac-Man maze) paradigms for brain-computer interface applications. The dataset comprises 1,800 trials across four Spanish directional commands recorded at 500 Hz from 24 electrodes using the mBrainTrain Smarting system. This derivative dataset enables systematic evaluation of paradigm design effects on imagined speech decoding performance.",
-  "methods_description": "EEG data were acquired from 15 healthy participants (8 male, 7 female, ages 18-27) using a 24-channel mBrainTrain Smarting system at 500 Hz sampling rate with FCz reference and Fpz ground. Two experimental paradigms were compared: (1) traditional cue-based with visual and auditory cues (5 beeps at 1.4s rhythm) followed by 7 imagined speech repetitions, with the last 3 repetitions extracted for analysis, and (2) gamified paradigm using a Pac-Man maze interface with 1.4s periods for movement decision, imagined speech, and vocalized speech. Each participant completed 2 sessions with 120 trials per session (30 per class), yielding 450 trials per class across the dataset. The final dataset contains the last 3 imagined speech repetitions per trial from the traditional paradigm.",
+  "description": "An EEG dataset of imagined speech from 15 healthy participants comparing traditional cue-based and gamified paradigm designs for brain-computer interface applications. The dataset comprises 1,800 trials of four Spanish directional commands recorded at 500 Hz from 24 electrodes using the mBrainTrain Smarting system. This derivative dataset enables systematic evaluation of paradigm design effects on imagined speech decoding performance.",
+  "methods_description": "EEG data were acquired from 15 healthy participants (8 male, 7 female, ages 18-27) using a 24-channel mBrainTrain Smarting system at 500 Hz sampling rate with FCz reference and Fpz ground. Two experimental paradigms were compared: (1) traditional cue-based with visual and auditory cues (5 beeps at 1.4s rhythm) followed by 7 imagined speech repetitions, with the last 3 repetitions extracted for analysis, and (2) gamified paradigm using a Pac-Man maze interface. Each participant completed 2 sessions with 120 trials per session (30 per class), yielding 450 trials per class.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -34,19 +34,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "speech imagery"
-    },
-    {
       "term": "gamified paradigm"
     },
     {
-      "term": "neural decoding"
-    },
-    {
-      "term": "Pac-Man"
-    },
-    {
-      "term": "Spanish commands"
+      "term": "signal processing"
     }
   ],
   "related_identifiers": [
@@ -61,11 +52,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000174",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -74,6 +60,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000174",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -82,17 +73,19 @@
     "eeg"
   ],
   "sizes": [
-    "869.1 MB (61 files)"
+    "1.6 GB (91 files)"
   ],
   "formats": [
+    ".edf",
     ".eeg",
     ".json",
     ".md",
     ".tsv",
     ".vhdr",
     ".vmrk",
+    ".xdf",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d7cdc62ab2f9a8591fa302bbe6d135fd9003caf570e92d86d556bbb508d60b51"
+  "source_hash": "4b7bf70489fdf424897ddf2a8642e231a30de6ca8dd3580bf758abd949fc4ccb"
 }
