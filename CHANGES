@@ -1,0 +1,5 @@
+1.0.4 2026-10-16
+  - sourcedata: added 30 paths <file-id>/file_downloaded (no extension), the names under which
+    moabb.datasets.AguileraRodriguez2025 caches the Mendeley Data downloads (dataset 57g8z63tmy). Each points
+    to the same git-annex key as the existing <file-id>/file_downloaded.edf or .xdf; no new data uploaded.
+    No existing file changed; the BIDS tree is unchanged.
